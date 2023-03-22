@@ -1,0 +1,18 @@
+Find the output for the program. 
+ #include<iostream>
+ 
+using namespace std;
+int main()
+{
+  int a = 5;
+  int b = 5;
+  int sum = -( -a-b );
+  cout << sum;
+  return 0;
+}
+The output of the program will be 10.
+
+Explanation:
+The expression -a-b evaluates to -10 because the subtraction operator has higher precedence than the unary negation operator. Then the outer unary negation operator - changes the sign of the result to positive, so -(-10) evaluates to 10.
+
+The value of sum is assigned to 10 and it is printed using the cout statement. Therefore, the output of the program is 10.
