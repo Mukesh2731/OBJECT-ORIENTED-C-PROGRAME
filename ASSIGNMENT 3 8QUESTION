@@ -1,0 +1,17 @@
+Find the output
+#include<iostream>
+ 
+using namespace std;
+int main()
+{
+   int n = 4;
+   n = n >> 2;
+   cout << n;
+   return 0;
+}
+The output of the program will be 1.
+
+Explanation:
+The program initializes an integer variable n with the value 4. The next line n = n >> 2 shifts the bits of n two positions to the right. The resulting value of n is 1, which is obtained by shifting the bits of 4 two positions to the right.
+
+The cout statement outputs the value of n, which is 1, to the console. Therefore, the output of the program is 1.
