@@ -1,0 +1,23 @@
+What is the output
+#include<iostream>
+ 
+using namespace std;
+int main()
+{
+    if (!(cout << "SIMATS"))
+    cout <<" SIMATS ";
+    else
+    cout << "SCHOOL OF ENGINEERING ";
+     
+    return 0;
+}
+The output of the program will be SIMATS.
+
+Explanation:
+The cout statement inside the if condition cout << "SIMATS" is evaluated first, which outputs the string "SIMATS" to the console. The << operator returns the cout object, which is then passed to the if statement.
+
+The logical negation operator ! is applied to the cout object, which returns false because the cout object is not null. Therefore, the condition in the if statement is false, and the else block is not executed.
+
+Since the if condition is false, the program continues to the return statement, and the program terminates.
+
+So, the output of the program is SIMATS.
