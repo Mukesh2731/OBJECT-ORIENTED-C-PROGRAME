@@ -1,3 +1,11 @@
+1.Idnetify the error for the following programs,
+#include<iostream>
+ int main()
+{
+  cout << "\"geeksforgeeks\"";
+   }
+The error in the program is that it is missing the using namespace std; statement, which is required to use the cout object without the std:: prefix.
+To fix the error, the using namespace std; statement should be added at the beginning of the program, like this:
 THE CORRECTED CODE IS:
 using namespace std;
 #include <iostream>
