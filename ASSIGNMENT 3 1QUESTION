@@ -1,3 +1,4 @@
+THE CORRECTED CODE IS:
 using namespace std;
 #include <iostream>
 int main() {
