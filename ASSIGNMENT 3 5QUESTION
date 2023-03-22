@@ -1,0 +1,17 @@
+Can we do in C++ with this header file.
+#include<bits/stdc++.h>
+ 
+int main ()
+{
+   int a = 15, b = 20;
+   printf("max = %d\n", ((a + b) + abs(a - b)) / 2);
+   printf("min = %d", ((a + b) - abs(a - b)) / 2);
+   return 0;
+}
+Yes, you can use the #include<bits/stdc++.h> header file in C++ to include all the standard headers, including cstdio which defines the printf function used in this program.
+
+The program calculates and prints the maximum and minimum values of a and b. The formula used to calculate the maximum and minimum is based on the fact that the sum and difference of two numbers can be used to find their maximum and minimum values. The abs function is used to find the absolute difference between a and b.
+
+So, the output of the program will be:
+max = 20
+min = 15
