@@ -1,0 +1,28 @@
+Write a program to count all the prime and composite numbers entered by the user.
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+bool isPrime(int num) {
+    if (num <= 1) return false; 
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num, primeCount = 0, compositeCount = 0;
+    char choice;
+    do {
+        cout << "Enter a number: ";
+        cin >> num;
+        if (isPrime(num)) primeCount++;
+        else compositeCount++;
+        cout << "Do you want to enter another number? (Y/N): ";
+        cin >> choice;
+    } while (choice == 'Y' || choice == 'y');
+    cout << "Total Prime Numbers: " << primeCount << endl;
+    cout << "Total Composite Numbers: " << compositeCount << endl;
+    return 0;
+}
